@@ -102,6 +102,7 @@ p::selection{
     background-color: mediumorchid;
 }
 
+/* Div der */
 .divDer{
     width: 60%;
     height: 400px;
@@ -109,42 +110,95 @@ p::selection{
     background-color: lightskyblue;
 }
 
+/* Footer */
 .footer{
     width: 100%;
     height: 80px;
     background-color: lightskyblue;
     display: flex;
     align-items: center;
+    margin-top: 5%;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
+/* Div instituto */
 .instituto{
     width: 30%;
     height: 80%;
     background-color: lightblue;
-
+    display: flex;
     align-items: center;
 }
 
+/* Div curso */
 .curso{
     width: 30%;
     height: 80%;
     background-color: lightblue;
-
+    display: flex;
     align-items: center;
 }
 
+/* Div fecha */
 .fecha{
     width: 30%;
     height: 80%;
     background-color: lightblue;
+    display: flex;
     align-items: center;
 }
 
+/* Formato span */
 span{
     padding:3%;
     font-family: Bebas Neue;
-    font-size: 30px;
+    font-size: 12px;
+    text-align: center;
 }
+
+/* Media cuery */
+@media only screen and (orientation: portrait) {
+    .pagina {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 5%;
+    }
+  
+    .divIzq {
+    
+      width: 90%;
+      height: 90%;
+    }
+  
+    .divDer {
+      width: 80%;
+      height: 80%;
+      margin-bottom: 2%;
+    }
+  
+    #nombre {
+      height: 20px;
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Instituto {
+      order: 3;
+      width: 100%;
+    }
+  
+    .Fecha {
+      order: 2;
+      width: 100%;
+    }
+  
+    .Curso {
+      order: 1;
+      width: 100%;
+    }
+  }
